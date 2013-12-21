@@ -1,0 +1,24 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <p class="lead">Map of <b>Windows Azure Data Centers</b> around the world</p>
+</div>
+<div id='dcMap' style="position:relative; width:100%; height:600px;"></div>
+
+<ul>
+    <li>Some data centers are in Production already (4 in North America, 2 in Europe, 2 in Asia), some are in Preview (2 in mainland China), some have been announced (2 in Japan, 2 in Australia, 1 in Brazil). Click on any data center map pin for more information.</li>
+    <li>A line is drawn from a data center to its fail-over data center (e.g., where Windows Azure Storage geo-replicates).</li>
+    <li>Currently, only full data centers are shown. CDN edge nodes will be added later.</li>
+    <li>Location are approximate to provide an approximate idea of general regions. The exact street addresses for data centers are not published by Microsoft. (Even if it was, that level of information would not be of practical value to the public.)</li>
+</ul>
+
+<script type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
+<script type="text/javascript" src="/dcLocList.js"></script>
+<script type="text/javascript" src="/Scripts/DataCenterMapper.js"></script>
+<link rel="stylesheet" href="/Content/DataCenterMapper.css" type="text/css" />
+
+<script type="text/javascript">
+    LoadMap();
+</script>

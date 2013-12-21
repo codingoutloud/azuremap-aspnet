@@ -1,0 +1,9 @@
+﻿.pinText div {
+    font-size: xx-small !important;
+    font-weight: lighter !important;
+    font-family:"Arial Narrow" !important;
+    color: black !important;
+    background-color: lightgoldenrodyellow !important;
+    /* letter-spacing: -1px !important; */
+    font-stretch: extra-condensed;
+}
