@@ -198,7 +198,8 @@
     </VisualStudio>
   </ProjectExtensions>
   <PropertyGroup>
-    <PreBuildEvent>$(ProjectDir)..\DataCenterJavaScriptGenerator\bin\$(ConfigurationName)\DataCenterJavaScriptGenerator &gt; $(ProjectDir)\dcLocList.js</PreBuildEvent>
+    <PreBuildEvent>
+    </PreBuildEvent>
   </PropertyGroup>
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
