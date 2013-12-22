@@ -20,6 +20,9 @@
 # don't ignore myself!
 !.gitignore
 
+### if we are using Kudu on Windows Azure Web Sites, there are some binaries we need to allow
+!.nuget/
+
 # Visual Studio build objects
 bin/
 csx/
