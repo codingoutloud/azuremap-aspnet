@@ -1,2 +1,2 @@
 [config]
-project = AzureMap.AzureMap
+project = AzureMap/AzureMap.csproj
