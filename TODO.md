@@ -7,5 +7,6 @@ TODO
 - Add layers to allow separate display of CDN, Full Data Centers, Production vs. Preview vs. Announced, show/hide "pairs" line
 - Fix line between pairs to go under Infobox
 - http://msdn.microsoft.com/en-us/library/gg427604.aspx
+- Add "fork me" ribbon https://github.com/blog/273-github-ribbons
 
 
