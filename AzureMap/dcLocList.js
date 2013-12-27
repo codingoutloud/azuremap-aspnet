@@ -12,8 +12,8 @@ var dcLocList =
 { name: "Beijing China", x: "39.9065704345703", y: "116.387649536133", location: "Beijing, China", description: "<br/>Location: Beijing, China<br/>Status: Preview<br/>Scope: Full Windows Azure<br/>Failover Data Center: Shanghai China" }, 
 { name: "East Japan", x: "35.6832084655762", y: "139.808944702148", location: "Tokyo, Japan", description: "<br/>Location: Tokyo, Japan<br/>Status: Announced<br/>Scope: Full Windows Azure<br/>Failover Data Center: West Japan" }, 
 { name: "West Japan", x: "34.7703742980957", y: "135.508148193359", location: "Kansai, Japan", description: "<br/>Location: Kansai, Japan<br/>Status: Announced<br/>Scope: Full Windows Azure<br/>Failover Data Center: East Japan" }, 
-{ name: "New South Wales", x: "-32.1742324829102", y: "147.067459106445", location: "New South Wales, Australia", description: "<br/>Location: New South Wales, Australia<br/>Status: Announced<br/>Scope: Full Windows Azure<br/>Failover Data Center: Victoria" }, 
-{ name: "Victoria", x: "-36.9223518371582", y: "144.351409912109", location: "Victoria, Australia", description: "<br/>Location: Victoria, Australia<br/>Status: Announced<br/>Scope: Full Windows Azure<br/>Failover Data Center: New South Wales" }, 
+{ name: "NSW", x: "-32.1742324829102", y: "147.067459106445", location: "New South Wales, Australia", description: "<br/>Location: New South Wales, Australia<br/>Status: Announced<br/>Scope: Full Windows Azure<br/>Failover Data Center: Victoria" }, 
+{ name: "Victoria", x: "-36.9223518371582", y: "144.351409912109", location: "Victoria, Australia", description: "<br/>Location: Victoria, Australia<br/>Status: Announced<br/>Scope: Full Windows Azure<br/>Failover Data Center: NSW" }, 
 { name: "Brazil", x: "-10.8104515075684", y: "-52.9731178283691", location: "Brazil", description: "<br/>Location: Brazil<br/>Status: Announced<br/>Scope: Full Windows Azure<br/>Failover Data Center: South Central US" }, 
 ];
 
@@ -34,7 +34,7 @@ var dcPairList =
 { x1: "31.2551593780518", y1: "121.474700927734", x2: "39.9065704345703", y2: "116.387649536133", source: "Beijing China", pair: "Shanghai China" }, 
 { x1: "34.7703742980957", y1: "135.508148193359", x2: "35.6832084655762", y2: "139.808944702148", source: "East Japan", pair: "West Japan" }, 
 { x1: "35.6832084655762", y1: "139.808944702148", x2: "34.7703742980957", y2: "135.508148193359", source: "West Japan", pair: "East Japan" }, 
-{ x1: "-36.9223518371582", y1: "144.351409912109", x2: "-32.1742324829102", y2: "147.067459106445", source: "New South Wales", pair: "Victoria" }, 
-{ x1: "-32.1742324829102", y1: "147.067459106445", x2: "-36.9223518371582", y2: "144.351409912109", source: "Victoria", pair: "New South Wales" }, 
+{ x1: "-36.9223518371582", y1: "144.351409912109", x2: "-32.1742324829102", y2: "147.067459106445", source: "NSW", pair: "Victoria" }, 
+{ x1: "-32.1742324829102", y1: "147.067459106445", x2: "-36.9223518371582", y2: "144.351409912109", source: "Victoria", pair: "NSW" }, 
 { x1: "29.4245796203613", y1: "-98.4946136474609", x2: "-10.8104515075684", y2: "-52.9731178283691", source: "Brazil", pair: "South Central US" }, 
 ];

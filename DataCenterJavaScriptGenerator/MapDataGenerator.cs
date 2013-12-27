@@ -153,7 +153,7 @@ namespace AzureMap.MapData
 
          new DataCenterDescription
          {
-            Name = "New South Wales",
+            Name = "NSW",
             PairName = "Victoria",
             Location = "New South Wales, Australia",
             Culture = "en-GB",
@@ -164,7 +164,7 @@ namespace AzureMap.MapData
          new DataCenterDescription
          {
             Name = "Victoria",
-            PairName = "New South Wales",
+            PairName = "NSW",
             Location = "Victoria, Australia",
             Culture = "en-GB",
             Status = "Announced",
