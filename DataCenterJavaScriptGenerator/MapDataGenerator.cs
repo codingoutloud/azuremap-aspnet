@@ -238,7 +238,7 @@ namespace AzureMap.MapData
 
                string html = dc.DescriptionHTML;
                html = String.Empty;
-               html += "<br/>Geo: " + dc.Geo;
+               html += "Geo: " + dc.Geo;
                html += "<br/>Region: " + dc.Region;
                html += "<br/>Status: " + dc.Status;
                html += "<br/>Scope: " + dc.Scope;
