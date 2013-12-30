@@ -23,6 +23,14 @@ namespace AzureMap.MapData
 
       // TERMINOLOGY: http://www.windowsazure.com/en-us/support/trust-center/privacy/
       // IP Addr range uses consistent terminology: http://msdn.microsoft.com/en-us/library/windowsazure/dn175718.aspx
+      // http://www.globalfoundationservices.com/
+      // LATENCY: http://joranmarkx.wordpress.com/2012/01/16/microsoft-azure-data-center-locations-worl-wide/
+      // SOVEREINTY & LATENCY (Australia-oriented): http://blogesh.wordpress.com/2013/05/20/new-windows-azure-datacenters-in-oz-finally/
+      // MAP: http://cloudcomputing.info/en/news/2013/12/microsoft-announces-new-windows-azure-datacenter-in-brazil.html/azure-datacenters
+      // PARTNER INTEGRATION: http://www.thestreet.com/story/12061430/1/windows-azure-connections-enabled-at-equinix-data-centers.html
+      // SHIPPING DISKS: http://weblogs.asp.net/scottgu/archive/2013/11/04/windows-azure-import-export-hard-drives-vm-acls-web-sockets-remote-debugging-continuous-delivery-new-relic-billing-alerts-and-more.aspx
+      // NOSTALGIA: http://www.neowin.net/news/inside-windows-azures-data-center-one-of-worlds-largest
+      // PowerShell: Get-AzureLocation (for current account): http://msdn.microsoft.com/en-us/library/dn205211.aspx
       private static DataCenterDescription[] dataCenterDescriptions =
       {
          new DataCenterDescription
@@ -136,18 +144,20 @@ namespace AzureMap.MapData
             Geo = "Asia Pacific",
             Region = "Beijing, China",
             Culture = "zh-Hans",
-            Status = "Preview",
+            Status = "Public Preview (since 06-June-2013)",
             Scope = "Full Windows Azure",
             DescriptionHTML =
                "Mainland China - 'Daxing District of Beijing' partnering with 21Vianet - <a href='http://ir.21vianet.com/releasedetail.cfm?ReleaseID=766443'>press release</a>"
          },
 
          // http://blogs.technet.com/b/microsoft_blog/archive/2013/05/22/microsoft-announces-major-expansion-of-windows-azure-services-in-asia.aspx
+         // "Steve also announced our intent to open a new major region in Japan, with two local sub-regions— Japan East in the Tokyo area and Japan West in the Kansai area"
+         // "new major region in Japan"
          new DataCenterDescription
          {
             Name = "Japan East",
             PairName = "Japan West",
-            Geo = "",
+            Geo = "Japan",
             Region = "Tokyo, Japan",
             Culture = "ja",
             Status = "Announced",
@@ -158,8 +168,8 @@ namespace AzureMap.MapData
          {
             Name = "Japan West",
             PairName = "Japan East",
-            Geo = "",
-            Region = "Kansai, Japan", // Kansai (Satya), Osaka (was early first guess)
+            Geo = "Japan",
+            Region = "Kansai, Japan",
             Culture = "ja",
             Status = "Announced",
             Scope = "Full Windows Azure",
@@ -168,9 +178,10 @@ namespace AzureMap.MapData
 
          new DataCenterDescription
          {
-            Name = "NSW",
-            PairName = "Victoria",
-            Geo = "",
+            Name = "Australia East",
+            PairName = "Australia Southeast",
+            Geo = "Australia", // "announcing the planned expansion of a new Windows Azure major region for Australia" http://blogs.msdn.com/b/ausblog/archive/2013/05/21/windows-azure-expands-downunder.aspx
+                               // "" http://redmondmag.com/articles/2013/05/23/azure-expanding-to-asia.aspx
             Region = "Sydney, New South Wales, Australia",
             Culture = "en-GB",
             Status = "Announced",
@@ -179,9 +190,9 @@ namespace AzureMap.MapData
          },
          new DataCenterDescription
          {
-            Name = "Victoria",
-            PairName = "NSW",
-            Geo = "",
+            Name = "Australia Southeast",
+            PairName = "Australia East",
+            Geo = "Australia",
             Region = "Melbourne, Victoria, Australia",
             Culture = "en-GB",
             Status = "Announced",
@@ -194,8 +205,8 @@ namespace AzureMap.MapData
          {
             Name = "Brazil South",
             PairName = "US South Central",
-            Geo = "",
-            Region = "Brazil",
+            Geo = "South America (speculated)",
+            Region = "Brazil South",
             Culture = "pt-BR",
             Status = "Announced",
             Scope = "Full Windows Azure",
