@@ -51,7 +51,7 @@ function addDataCenterToMap(dc, map) {
         title: dc.name,
         description: dc.description,
         offset: new Microsoft.Maps.Point(0, 20),
-        height: 160,
+        height: 180,
         zIndex: zIndexInfobox,
         visible: false
     });
