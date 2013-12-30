@@ -9,7 +9,8 @@ namespace AzureMap.MapData
    {
       public string Name { get; set; }
       public string PairName { get; set; }
-      public string Location { get; set; }
+      public string Geo { get; set; }
+      public string Region { get; set; }
       public string Culture { get; set; }
       public string Status { get; set; }
       public string Scope { get; set; }
@@ -20,13 +21,16 @@ namespace AzureMap.MapData
    {
       static string BingMapsKey = "AmQnuM6i5-v2Z1jM44W1OUVycySYZ_975GFp7vqKSZ9IqVW76bKThXgUujAfInq9";
 
+      // TERMINOLOGY: http://www.windowsazure.com/en-us/support/trust-center/privacy/
+      // IP Addr range uses consistent terminology: http://msdn.microsoft.com/en-us/library/windowsazure/dn175718.aspx
       private static DataCenterDescription[] dataCenterDescriptions =
       {
          new DataCenterDescription
          {
-            Name = "North Central US",
-            PairName = "South Central US",
-            Location = "Chicago, IL, USA",
+            Name = "US North Central",
+            PairName = "US South Central",
+            Geo = "United States",
+            Region = "Chicago, IL, USA",
             Culture = "en-US",
             Status = "Production",
             Scope = "Full Windows Azure",
@@ -34,9 +38,10 @@ namespace AzureMap.MapData
          },
          new DataCenterDescription
          {
-            Name = "South Central US",
-            PairName = "North Central US",
-            Location = "San Antonio, TX, USA",
+            Name = "US South Central",
+            PairName = "US North Central",
+            Geo = "United States",
+            Region = "San Antonio, TX, USA",
             Culture = "en-US",
             Status = "Production",
             Scope = "Full Windows Azure",
@@ -45,9 +50,10 @@ namespace AzureMap.MapData
 
          new DataCenterDescription
          {
-            Name = "West Europe",
-            PairName = "North Europe",
-            Location = "Amsterdam, Netherlands",
+            Name = "Europe West",
+            PairName = "Europe North",
+            Geo = "Europe",
+            Region = "Amsterdam, Netherlands",
             Culture = "nl-BE",
             Status = "Production",
             Scope = "Full Windows Azure",
@@ -55,9 +61,10 @@ namespace AzureMap.MapData
          },
          new DataCenterDescription
          {
-            Name = "North Europe",
-            PairName = "West Europe",
-            Location = "Dublin, Ireland",
+            Name = "Europe North",
+            PairName = "Europe West",
+            Geo = "Europe",
+            Region = "Dublin, Ireland",
             Culture = "en-GB",
             Status = "Production",
             Scope = "Full Windows Azure",
@@ -67,29 +74,32 @@ namespace AzureMap.MapData
          new DataCenterDescription
          {
             Name = "East Asia",
-            PairName = "Southeast Asia",
-            Location = "Hong Kong",
+            PairName = "SE Asia",
+            Geo = "Asia Pacific",
+            Region = "Hong Kong",
             Culture = "zh-Hans",
             Status = "Production",
             Scope = "Full Windows Azure",
-            DescriptionHTML = "Mainland China"
+            DescriptionHTML = ""
          },
          new DataCenterDescription
          {
-            Name = "Southeast Asia",
+            Name = "SE Asia",
             PairName = "East Asia",
-            Location = "Singapore",
+            Geo = "Asia Pacific",
+            Region = "Singapore",
             Culture = "zh-Hans",
             Status = "Production",
             Scope = "Full Windows Azure",
-            DescriptionHTML = "Mainland China"
+            DescriptionHTML = "Southeast Asia"
          },
 
          new DataCenterDescription
          {
-            Name = "East US",
-            PairName = "West US",
-            Location = "Virginia, USA",
+            Name = "US East",
+            PairName = "US West",
+            Geo = "United States",
+            Region = "Virginia, USA",
             Culture = "en-US",
             Status = "Production",
             Scope = "Full Windows Azure",
@@ -97,9 +107,10 @@ namespace AzureMap.MapData
          },
          new DataCenterDescription
          {
-            Name = "West US",
-            PairName = "East US",
-            Location = "California, USA",
+            Name = "US West",
+            PairName = "US East",
+            Geo = "United States",
+            Region = "California, USA",
             Culture = "en-US",
             Status = "Production",
             Scope = "Full Windows Azure",
@@ -110,7 +121,8 @@ namespace AzureMap.MapData
          {
             Name = "Shanghai China",
             PairName = "Beijing China",
-            Location = "Shanghai, China",
+            Geo = "Asia Pacific",
+            Region = "Shanghai, China",
             Culture = "zh-Hans",
             Status = "Preview",
             Scope = "Full Windows Azure",
@@ -121,7 +133,8 @@ namespace AzureMap.MapData
          {
             Name = "Beijing China",
             PairName = "Shanghai China",
-            Location = "Beijing, China",
+            Geo = "Asia Pacific",
+            Region = "Beijing, China",
             Culture = "zh-Hans",
             Status = "Preview",
             Scope = "Full Windows Azure",
@@ -132,9 +145,10 @@ namespace AzureMap.MapData
          // http://blogs.technet.com/b/microsoft_blog/archive/2013/05/22/microsoft-announces-major-expansion-of-windows-azure-services-in-asia.aspx
          new DataCenterDescription
          {
-            Name = "East Japan",
-            PairName = "West Japan",
-            Location = "Tokyo, Japan",
+            Name = "Japan East",
+            PairName = "Japan West",
+            Geo = "",
+            Region = "Tokyo, Japan",
             Culture = "ja",
             Status = "Announced",
             Scope = "Full Windows Azure",
@@ -142,9 +156,10 @@ namespace AzureMap.MapData
          },
          new DataCenterDescription
          {
-            Name = "West Japan",
-            PairName = "East Japan",
-            Location = "Kansai, Japan", // Kansai (Satya), Osaka (was early first guess)
+            Name = "Japan West",
+            PairName = "Japan East",
+            Geo = "",
+            Region = "Kansai, Japan", // Kansai (Satya), Osaka (was early first guess)
             Culture = "ja",
             Status = "Announced",
             Scope = "Full Windows Azure",
@@ -155,7 +170,8 @@ namespace AzureMap.MapData
          {
             Name = "NSW",
             PairName = "Victoria",
-            Location = "New South Wales, Australia",
+            Geo = "",
+            Region = "Sydney, New South Wales, Australia",
             Culture = "en-GB",
             Status = "Announced",
             Scope = "Full Windows Azure",
@@ -165,7 +181,8 @@ namespace AzureMap.MapData
          {
             Name = "Victoria",
             PairName = "NSW",
-            Location = "Victoria, Australia",
+            Geo = "",
+            Region = "Melbourne, Victoria, Australia",
             Culture = "en-GB",
             Status = "Announced",
             Scope = "Full Windows Azure",
@@ -175,9 +192,10 @@ namespace AzureMap.MapData
          // http://blogs.msdn.com/b/windowsazure/archive/2013/12/04/expanding-windows-azure-capacity-brazil.aspx?Redirected=true
          new DataCenterDescription
          {
-            Name = "Brazil",
-            PairName = "South Central US",
-            Location = "Brazil",
+            Name = "Brazil South",
+            PairName = "US South Central",
+            Geo = "",
+            Region = "Brazil",
             Culture = "pt-BR",
             Status = "Announced",
             Scope = "Full Windows Azure",
@@ -194,7 +212,7 @@ namespace AzureMap.MapData
             try
             {
                // string locationsRequest = CreateRequest("New%20York");
-               var locationsRequest = CreateRequest(dc.Location);
+               var locationsRequest = CreateRequest(dc.Region);
                var locationsResponse = MakeRequest(locationsRequest);
 
                var x =
@@ -208,12 +226,13 @@ namespace AzureMap.MapData
 
                string html = dc.DescriptionHTML;
                html = String.Empty;
-               html += "<br/>Location: " + dc.Location;
+               html += "<br/>Geo: " + dc.Geo;
+               html += "<br/>Region: " + dc.Region;
                html += "<br/>Status: " + dc.Status;
                html += "<br/>Scope: " + dc.Scope;
                html += "<br/>Failover Data Center: " + dc.PairName;
                Console.WriteLine("{{ name: \"{0}\", x: \"{1}\", y: \"{2}\", location: \"{3}\", description: \"{4}\" }}, ", 
-                  dc.Name, x, y, dc.Location, html);
+                  dc.Name, x, y, dc.Region, html);
 //               Console.WriteLine(locationsResponse.ResourceSets[0].Resources[0].Address.FormattedAddress);
 /////            ProcessResponse(locationsResponse);
             }
@@ -236,7 +255,7 @@ namespace AzureMap.MapData
          {
             try
             {
-               var locationsRequest1 = CreateRequest(dc.Location);
+               var locationsRequest1 = CreateRequest(dc.Region);
                var locationsResponse1 = MakeRequest(locationsRequest1);
 
                var x1 =
@@ -248,7 +267,7 @@ namespace AzureMap.MapData
                      (locationsResponse1.ResourceSets[0].Resources[0].GeocodePoints[0]))
                      .Coordinates[1];
 
-               var locationsRequest2 = CreateRequest(sourceDC.Location);
+               var locationsRequest2 = CreateRequest(sourceDC.Region);
                var locationsResponse2 = MakeRequest(locationsRequest2);
 
                var x2 =
@@ -327,7 +346,7 @@ namespace AzureMap.MapData
          }
          Console.WriteLine();
 
-         //Get the Geocode Points for each Location
+         //Get the Geocode Points for each Region
          for (int i = 0; i < locNum; i++)
          {
             Location location = (Location)locationsResponse.ResourceSets[0].Resources[i];
