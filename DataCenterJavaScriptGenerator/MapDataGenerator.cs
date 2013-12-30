@@ -201,14 +201,15 @@ namespace AzureMap.MapData
          },
 
          // http://blogs.msdn.com/b/windowsazure/archive/2013/12/04/expanding-windows-azure-capacity-brazil.aspx?Redirected=true
+         // "We expect the region to come online in early 2014 and are delighted to announce that we will begin to on-board preview customers in the next 4 to 6 weeks"
          new DataCenterDescription
          {
             Name = "Brazil South",
             PairName = "US South Central",
-            Geo = "South America (speculated)",
+            Geo = "South America (Geo name not confirmed)",
             Region = "Brazil South",
             Culture = "pt-BR",
-            Status = "Announced",
+            Status = "Announced (Public Preview <a href='http://blogs.msdn.com/b/windowsazure/archive/2013/12/04/expanding-windows-azure-capacity-brazil.aspx'>expected</a> early in 2014)",
             Scope = "Full Windows Azure",
             DescriptionHTML = ""
          },
