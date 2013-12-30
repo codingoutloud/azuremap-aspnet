@@ -8,12 +8,12 @@ var dcLocList =
 { name: "SE Asia", x: "1.32199585437775", y: "103.820533752441", location: "Singapore", description: "<br/>Geo: Asia Pacific<br/>Region: Singapore<br/>Status: Production<br/>Scope: Full Windows Azure<br/>Failover Data Center: East Asia" }, 
 { name: "US East", x: "37.5088043212891", y: "-78.6515426635742", location: "Virginia, USA", description: "<br/>Geo: United States<br/>Region: Virginia, USA<br/>Status: Production<br/>Scope: Full Windows Azure<br/>Failover Data Center: US West" }, 
 { name: "US West", x: "37.1519241333008", y: "-119.646041870117", location: "California, USA", description: "<br/>Geo: United States<br/>Region: California, USA<br/>Status: Production<br/>Scope: Full Windows Azure<br/>Failover Data Center: US East" }, 
-{ name: "Shanghai China", x: "31.2551593780518", y: "121.474700927734", location: "Shanghai, China", description: "<br/>Geo: Asia Pacific<br/>Region: Shanghai, China<br/>Status: Preview<br/>Scope: Full Windows Azure<br/>Failover Data Center: Beijing China" }, 
+{ name: "Shanghai China", x: "31.2551593780518", y: "121.474700927734", location: "Shanghai, China", description: "<br/>Geo: Asia Pacific<br/>Region: Shanghai, China<br/>Status: Public Preview (since 06-June-2013)<br/>Scope: Full Windows Azure<br/>Failover Data Center: Beijing China" }, 
 { name: "Beijing China", x: "39.9065704345703", y: "116.387649536133", location: "Beijing, China", description: "<br/>Geo: Asia Pacific<br/>Region: Beijing, China<br/>Status: Public Preview (since 06-June-2013)<br/>Scope: Full Windows Azure<br/>Failover Data Center: Shanghai China" }, 
 { name: "Japan East", x: "35.6832084655762", y: "139.808944702148", location: "Tokyo, Japan", description: "<br/>Geo: Japan<br/>Region: Tokyo, Japan<br/>Status: Announced<br/>Scope: Full Windows Azure<br/>Failover Data Center: Japan West" }, 
 { name: "Japan West", x: "34.7703742980957", y: "135.508148193359", location: "Kansai, Japan", description: "<br/>Geo: Japan<br/>Region: Kansai, Japan<br/>Status: Announced<br/>Scope: Full Windows Azure<br/>Failover Data Center: Japan East" }, 
-{ name: "Australia East", x: "-33.8740005493164", y: "151.203002929688", location: "Sydney, New South Wales, Australia", description: "<br/>Geo: Australia<br/>Region: Sydney, New South Wales, Australia<br/>Status: Announced<br/>Scope: Full Windows Azure<br/>Failover Data Center: Australia Southeast" }, 
-{ name: "Australia Southeast", x: "-37.8132019042969", y: "144.955001831055", location: "Melbourne, Victoria, Australia", description: "<br/>Geo: Australia<br/>Region: Melbourne, Victoria, Australia<br/>Status: Announced<br/>Scope: Full Windows Azure<br/>Failover Data Center: Australia East" }, 
+{ name: "Australia East", x: "-33.8740005493164", y: "151.203002929688", location: "Sydney, New South Wales, Australia", description: "<br/>Geo: Australia<br/>Region: Sydney, New South Wales, Australia<br/>Status: Announced<br/>Scope: Full Windows Azure<br/>Failover Data Center: Australia SE" }, 
+{ name: "Australia SE", x: "-37.8132019042969", y: "144.955001831055", location: "Melbourne, Victoria, Australia", description: "<br/>Geo: Australia<br/>Region: Melbourne, Victoria, Australia<br/>Status: Announced<br/>Scope: Full Windows Azure<br/>Failover Data Center: Australia East" }, 
 { name: "Brazil South", x: "-10.8104515075684", y: "-52.9731178283691", location: "Brazil South", description: "<br/>Geo: South America (Geo name not confirmed)<br/>Region: Brazil South<br/>Status: Announced (Public Preview <a href='http://blogs.msdn.com/b/windowsazure/archive/2013/12/04/expanding-windows-azure-capacity-brazil.aspx'>expected</a> early in 2014)<br/>Scope: Full Windows Azure<br/>Failover Data Center: US South Central" }, 
 ];
 
@@ -34,7 +34,7 @@ var dcPairList =
 { x1: "31.2551593780518", y1: "121.474700927734", x2: "39.9065704345703", y2: "116.387649536133", source: "Beijing China", pair: "Shanghai China" }, 
 { x1: "34.7703742980957", y1: "135.508148193359", x2: "35.6832084655762", y2: "139.808944702148", source: "Japan East", pair: "Japan West" }, 
 { x1: "35.6832084655762", y1: "139.808944702148", x2: "34.7703742980957", y2: "135.508148193359", source: "Japan West", pair: "Japan East" }, 
-{ x1: "-37.8132019042969", y1: "144.955001831055", x2: "-33.8740005493164", y2: "151.203002929688", source: "Australia East", pair: "Australia Southeast" }, 
-{ x1: "-33.8740005493164", y1: "151.203002929688", x2: "-37.8132019042969", y2: "144.955001831055", source: "Australia Southeast", pair: "Australia East" }, 
+{ x1: "-37.8132019042969", y1: "144.955001831055", x2: "-33.8740005493164", y2: "151.203002929688", source: "Australia East", pair: "Australia SE" }, 
+{ x1: "-33.8740005493164", y1: "151.203002929688", x2: "-37.8132019042969", y2: "144.955001831055", source: "Australia SE", pair: "Australia East" }, 
 { x1: "29.4245796203613", y1: "-98.4946136474609", x2: "-10.8104515075684", y2: "-52.9731178283691", source: "Brazil South", pair: "US South Central" }, 
 ];

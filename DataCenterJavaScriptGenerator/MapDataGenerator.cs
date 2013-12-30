@@ -132,7 +132,7 @@ namespace AzureMap.MapData
             Geo = "Asia Pacific",
             Region = "Shanghai, China",
             Culture = "zh-Hans",
-            Status = "Preview",
+            Status = "Public Preview (since 06-June-2013)",
             Scope = "Full Windows Azure",
             DescriptionHTML =
                "Mainland China - 'Daxing District of Beijing' partnering with 21Vianet - <a href='http://ir.21vianet.com/releasedetail.cfm?ReleaseID=766443'>press release</a>"
@@ -179,7 +179,7 @@ namespace AzureMap.MapData
          new DataCenterDescription
          {
             Name = "Australia East",
-            PairName = "Australia Southeast",
+            PairName = "Australia SE",
             Geo = "Australia", // "announcing the planned expansion of a new Windows Azure major region for Australia" http://blogs.msdn.com/b/ausblog/archive/2013/05/21/windows-azure-expands-downunder.aspx
                                // "" http://redmondmag.com/articles/2013/05/23/azure-expanding-to-asia.aspx
             Region = "Sydney, New South Wales, Australia",
@@ -190,7 +190,7 @@ namespace AzureMap.MapData
          },
          new DataCenterDescription
          {
-            Name = "Australia Southeast",
+            Name = "Australia SE",
             PairName = "Australia East",
             Geo = "Australia",
             Region = "Melbourne, Victoria, Australia",
