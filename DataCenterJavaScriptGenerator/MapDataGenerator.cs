@@ -209,7 +209,7 @@ namespace AzureMap.MapData
             Geo = "South America (Geo name not confirmed)",
             Region = "Brazil South",
             Culture = "pt-BR",
-            Status = "Announced (Public Preview <a href='http://blogs.msdn.com/b/windowsazure/archive/2013/12/04/expanding-windows-azure-capacity-brazil.aspx'>expected</a> early in 2014)",
+            Status = "Announced (Public Preview <a  target='_blank' href='http://blogs.msdn.com/b/windowsazure/archive/2013/12/04/expanding-windows-azure-capacity-brazil.aspx'>expected</a> early in 2014)",
             Scope = "Full Windows Azure",
             DescriptionHTML = ""
          },

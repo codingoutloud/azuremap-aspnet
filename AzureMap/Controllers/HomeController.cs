@@ -15,14 +15,14 @@ namespace AzureMap.Controllers
 
       public ActionResult About()
       {
-         ViewBag.Message = "The Azure Map was written by Bill Wilder, but is open source. Have fun.";
+         ViewBag.Message = "The Azure Map is open source. Have fun.";
 
          return View();
       }
 
       public ActionResult Contact()
       {
-         ViewBag.Message = "The Azure Map was written by Bill Wilder, but is open source. Have fun.";
+         ViewBag.Message = "The Azure Map is open source. Have fun.";
 
          return View();
       }

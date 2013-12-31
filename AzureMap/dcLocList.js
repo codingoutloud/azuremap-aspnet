@@ -14,7 +14,7 @@ var dcLocList =
 { name: "Japan West", x: "34.7703742980957", y: "135.508148193359", location: "Kansai, Japan", description: "Geo: Japan<br/>Region: Kansai, Japan<br/>Status: Announced<br/>Scope: Full Windows Azure<br/>Failover Data Center: Japan East" }, 
 { name: "Australia East", x: "-33.8740005493164", y: "151.203002929688", location: "Sydney, New South Wales, Australia", description: "Geo: Australia<br/>Region: Sydney, New South Wales, Australia<br/>Status: Announced<br/>Scope: Full Windows Azure<br/>Failover Data Center: Australia SE" }, 
 { name: "Australia SE", x: "-37.8132019042969", y: "144.955001831055", location: "Melbourne, Victoria, Australia", description: "Geo: Australia<br/>Region: Melbourne, Victoria, Australia<br/>Status: Announced<br/>Scope: Full Windows Azure<br/>Failover Data Center: Australia East" }, 
-{ name: "Brazil South", x: "-10.8104515075684", y: "-52.9731178283691", location: "Brazil South", description: "Geo: South America (Geo name not confirmed)<br/>Region: Brazil South<br/>Status: Announced (Public Preview <a href='http://blogs.msdn.com/b/windowsazure/archive/2013/12/04/expanding-windows-azure-capacity-brazil.aspx'>expected</a> early in 2014)<br/>Scope: Full Windows Azure<br/>Failover Data Center: US South Central" }, 
+{ name: "Brazil South", x: "-10.8104515075684", y: "-52.9731178283691", location: "Brazil South", description: "Geo: South America (Geo name not confirmed)<br/>Region: Brazil South<br/>Status: Announced (Public Preview <a  target='_blank' href='http://blogs.msdn.com/b/windowsazure/archive/2013/12/04/expanding-windows-azure-capacity-brazil.aspx'>expected</a> early in 2014)<br/>Scope: Full Windows Azure<br/>Failover Data Center: US South Central" }, 
 ];
 
 

@@ -13,8 +13,8 @@
 <div id='dcMap' style="position:relative; width:100%; height:600px;"></div>
 
 <ul>
-    <li>Each pin on the map represents a Windows Azure Data Center <b><i>Region</i></b>. Each region has one or more data centers. Regions are part of a <b><i>Geo</i></b>. Each geo has one or more region. A geo represents a geo-political grouping of regions which can facilitate replication of data across regions within that geo. Regions within a geo are also at least 100s of miles apart to minimize the chances that a disaster in one region will impact other regions.</li>
-    <li>Some data centers are in Production already (4 in North America, 2 in Europe, 2 in Asia), some are in Preview (2 in mainland China), some have been announced (2 in Japan, 2 in Australia, 1 in Brazil). Click on any data center map pin for more information.</li>
+    <li>Each pin on the map represents a Windows Azure Data Center <b><i>Region</i></b>. Each region includes at least one data center. Regions are part of a <b><i>Geo</i></b>. Each geo includes at least region. (Have not yet confirmed/validated every geo and region name since I haven't found complete documentation on the newer ones.</li>
+    <li>Some data centers are in Production already (4 in North America, 2 in Europe, 2 in Asia), some are in Preview (e.g., 2 in mainland China), some have been announced (2 in Japan, 2 in Australia, 1 in Brazil). Click on any data center map pin for more information.</li>
     <li>A line is drawn from a data center to its fail-over data center (e.g., where Windows Azure Storage geo-replicates).</li>
     <li>Currently, only full data centers are shown. CDN edge nodes will be added later.</li>
     <li>Location are approximate to provide an approximate idea of general regions. The exact street addresses for data centers are not published by Microsoft. (Even if it was, that level of information would not be of practical value to the public.)</li>
